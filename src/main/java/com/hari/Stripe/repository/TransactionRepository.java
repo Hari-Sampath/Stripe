@@ -8,8 +8,8 @@ import java.util.Optional;
 
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 
-    Optional<Transaction> findByCustomer_Id(Long customerId);
+    Optional<Transaction> findByStripePaymentIntentId(String stripePaymentIntentId);
 
-    Optional<Transaction> findById(Long id);
+    List<Transaction> findByStatusAndFailureAlertSentFalse(String status);
 
 }
