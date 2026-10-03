@@ -2,8 +2,6 @@
 
 A Spring Boot backend that integrates with the [Stripe](https://stripe.com) payments platform. It uses Spring Security for authentication and authorization, Spring Data JPA (Java Persistence API) with PostgreSQL for storage, and Spring Mail for email notifications.
 
-> **Status:** Work in progress (`0.0.1-SNAPSHOT`)
-
 ---
 
 ## Tech Stack
